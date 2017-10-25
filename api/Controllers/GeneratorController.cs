@@ -22,7 +22,7 @@ namespace api.Controllers
         public async Task EmailRandomNames(Range range, string email = "test@face.com")
         {
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Generator", "generator@generator.com"));
+            message.From.Add(new MailboxAddress("Generator", "generator@generate.com"));
             message.To.Add(new MailboxAddress("", email));
             message.Subject = "Here are your random names!";
 
