@@ -5,7 +5,7 @@ WORKDIR /integration
 
 # copy
 COPY integration.csproj .
-RUN dotnet restore
+#RUN dotnet restore
 
 COPY . .
 
